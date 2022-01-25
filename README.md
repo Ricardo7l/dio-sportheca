@@ -12,4 +12,3 @@ Links úteis:
 - [Link para o curso](https://web.dio.me/course/dominando-ides-java/learning/b0f1ae39-6af7-4a2c-8fc2-c73ae8463c84?back=/track/sportheca-mobile-developer)
 - [Download Eclipse](https://www.eclipse.org/downloads/)
 - [Download Intellij - Windows](https://www.jetbrains.com/pt-br/idea/download/#section=windows)
-- [Git do Curso](github.com/cami-la/curso-dio-dominando-ides-java)
