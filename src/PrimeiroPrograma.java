@@ -1,4 +1,5 @@
 import br.com.dio.model.Gato;
+import br.com.dio.model.Livro;
 
 public class PrimeiroPrograma {
     public static void main(String[] args) {
@@ -18,5 +19,9 @@ public class PrimeiroPrograma {
         System.out.println(gato.equals(gato2)? "São iguais" : "Diferentes");
 
         System.out.println(gato1.toString());
+
+        Livro livro = new Livro("O Pequeno Príncipe", 300);
+
+        System.out.println(livro);
     }
 }
