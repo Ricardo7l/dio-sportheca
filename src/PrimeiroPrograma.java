@@ -1,3 +1,4 @@
+import br.com.dio.calculadora.Calculadora;
 import br.com.dio.model.Gato;
 import br.com.dio.model.Livro;
 
@@ -23,5 +24,13 @@ public class PrimeiroPrograma {
         Livro livro = new Livro("O Pequeno Príncipe", 300);
 
         System.out.println(livro);
+
+        Calculadora calculadora = new Calculadora();
+        int[] valores = calculadora.receberParametros();
+
+        System.out.println(calculadora.somar(valores[0], valores[1]));
+        System.out.println(calculadora.subtrair(valores[0], valores[1]));
+        System.out.println(calculadora.multiplicar(valores[0], valores[1]));
+        System.out.println(calculadora.dividir(valores[0], valores[1]));
     }
 }
