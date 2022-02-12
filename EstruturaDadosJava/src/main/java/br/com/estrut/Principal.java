@@ -22,7 +22,7 @@ public class Principal {
         musica3.setProximo(musica4);
         musica4.setProximo(musica5);
 
-        System.out.println(musica1.toString());
+        System.out.println(musica1);
 
         System.out.println(musica1);
         System.out.println(musica1.getProximo());
