@@ -4,11 +4,11 @@ import java.util.Objects;
 
 public class No<T> {
     private T conteudo;
-    private No<T> proximo;
+    private No<T> noAbaixo;
 
     public No(T conteudo) {
         this.conteudo = conteudo;
-        this.proximo = null;
+        this.noAbaixo = null;
     }
 
     @Override
@@ -16,12 +16,12 @@ public class No<T> {
         return "Nó:{musica='" + conteudo + '}';
     }
 
-    public No<T> getProximoNo() {
-        return proximo;
+    public No<T> getNoAbaixo() {
+        return noAbaixo;
     }
 
-    public void setProximoNo(No<T> proximo) {
-        this.proximo = proximo;
+    public void setNoAbaixo(No<T> proximo) {
+        this.noAbaixo = proximo;
     }
 
     public T getConteudo() {
@@ -37,11 +37,11 @@ public class No<T> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         No<?> no = (No<?>) o;
-        return conteudo.equals(no.conteudo) && proximo.equals(no.proximo);
+        return conteudo.equals(no.conteudo) && noAbaixo.equals(no.noAbaixo);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(proximo, conteudo);
+        return Objects.hash(noAbaixo, conteudo);
     }
 }
