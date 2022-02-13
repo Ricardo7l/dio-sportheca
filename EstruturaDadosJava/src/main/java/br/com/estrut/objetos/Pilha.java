@@ -29,4 +29,27 @@ public class Pilha {
         refTopo = refTopo.getNoAbaixo();
         return retirado;
     }
+
+    @Override
+    public String toString(){
+        if(isEmpty()) {
+            return null;
+        }
+        String mensagem = "";
+        No aux = refTopo;
+        mensagem += "---------------\n";
+        mensagem += "---- Pilha ----\n";
+        mensagem += "---------------\n";
+        while (true) {
+            if(aux != null) {
+                mensagem += aux.toString() + "\n";
+                aux = aux.getNoAbaixo();
+            } else {
+                break;
+            }
+        }
+        mensagem += "---------------\n";
+
+        return mensagem;
+    }
 }

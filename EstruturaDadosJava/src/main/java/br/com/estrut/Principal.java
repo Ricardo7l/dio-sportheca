@@ -63,6 +63,8 @@ public class Principal {
         pilha.push(no3);
         pilha.push(no4);
 
+        System.out.println(pilha.toString());
+
         System.out.println(pilha.refTopo);
         System.out.println(pilha.isEmpty());
         pilha.pop();
